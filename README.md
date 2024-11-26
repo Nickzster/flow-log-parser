@@ -4,7 +4,7 @@ This project is a flow log records parser based on [AWS VPC Flow Logs](https://d
 
 # Setup
 1. Install NodeJS 20.17.0 or newer.
-2. Run the program: `node main.mjs`. This will dump everything into `processed.txt`.
+2. Run the program: `node main.mjs`. This will dump everything into the output file specified (default is `processed.txt`).
 3. View the output contents via `cat processed.txt`.
 
 For usage help, run `node main.mjs --help`.
