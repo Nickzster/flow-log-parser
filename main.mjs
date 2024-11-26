@@ -82,7 +82,7 @@ const parseCSVLine = (line, format) => {
     return null;
   }
 
-  if (linesArr[0] === "" && linesArr[1] === "" && linesArr[2] === "") {
+  if (linesArr[0] === "" || linesArr[1] === "" || linesArr[2] === "") {
     console.warn("WARNING: skipping lookup condition with empty values!");
     console.log(JSON.stringify(line));
     return null;
