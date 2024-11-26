@@ -159,20 +159,20 @@ const parseArgs = async () => {
       fs.lstat(path.join(process.cwd(), processedArgs.output)),
     ]);
 
-    if (!logfileIsValid) {
+    if (!logfileIsValid.isFile()) {
       console.error("bad logfile was given", processedArgs.logfile);
       console.log("logfile specified is invalid. using example.log");
       return null;
     }
 
-    if (!lookupIsValid) {
+    if (!lookupIsValid.isFile()) {
       console.error("bad lookup was given", processedArgs.lookup);
       console.log("using example.csv");
       return null;
     }
 
-    if (!outputIsValid) {
-      console.error("bad output file was given", processedargs.output);
+    if (!outputIsValid.isFile()) {
+      console.error("bad output file was given", processedArgs.output);
       return null;
     }
 

@@ -24,6 +24,6 @@ Here is what I would like to do with this program next:
 2. Make the program dynamically handle different formats and versions depending on the structure of the log. It would be nice to process each line as it is fed into the program, and update the counts in real time.
 3. Figure out a better way to maintain the IANA protocol numbers. For simplicity sake, I want to keep this program lightweight and free of dependencies as much as possible.
 4. Fix the output processing. Since JavaScript strings are immutable, the string concatenation will need to be improved depending on the input size. 
-5. Get clearer requirements around edge cases and modify the program to handle them.
+5. Get clearer requirements around edge cases and modify the program to handle them properly.
 
 
