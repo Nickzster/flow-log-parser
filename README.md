@@ -14,7 +14,7 @@ For usage help, run `node main.mjs --help`.
 1. This parser can process version 2 default formatted logs. Any other version will be ignored by this parser, and a warning message will be displayed.
 2. The CSV Lookup table only accepts the format of `dstport,protocol,tag`. Any other formats specified in the .csv file will be ignored, and a warning message will be displayed.
 3. Only destination port + protocol counts will be added to the output file.
-4. To get the IANA protocol number mapping, I used [this file](https://github.com/bahamas10/node-protocol-numbers/blob/master/protocol-numbers.js).` 
+4. To get the IANA protocol number mapping, I used [this file](https://github.com/bahamas10/node-protocol-numbers/blob/master/protocol-numbers.js). 
 
 # Next Steps
 
