@@ -161,13 +161,11 @@ const parseArgs = async () => {
 
     if (!logfileIsValid.isFile()) {
       console.error("bad logfile was given", processedArgs.logfile);
-      console.log("logfile specified is invalid. using example.log");
       return null;
     }
 
     if (!lookupIsValid.isFile()) {
       console.error("bad lookup was given", processedArgs.lookup);
-      console.log("using example.csv");
       return null;
     }
 
